@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+
+    <!-- daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- header or navbar section -->
+    <header>
+        <div class="mx-2 md:mx-3 lg:mx-10 mt-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <img src="./images/Logo.png" alt="Logo">
+                </div>
+                <div class="navbar-end">
+                    <a href="index.html" class="btn bg-[#FF1F3D] hover:bg-[#e71d38] text-white px-7 py-2">Home</a>
+                </div>
+            </div>
+            <hr class="mx-2 my-5">
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <div class="w-3/4 mx-auto">
+            <!-- question-1 -->
+            <div class="collapse collapse-plus bg-red-100 my-3">
+                <input type="checkbox" />
+                <div class="collapse-title text-xl font-bold">
+                    Q-1: Discuss the scope of var, let, and const
+                </div>
+                <div class="collapse-content">
+                    <div>
+                        <div class="text-lg text-center font-bold pt-5 pb-3">var, let, and const</div>
+                        var, let, and const are three different ways to declare variables in JavaScript, and they
+                        each have their own scope and behavior. Understanding the scope of these variables is crucial
+                        for writing clean and bug-free code.
+                        we can reassign var and let value but we can not reassign a const value.
+
+                        var:
+                        Generally var is funcional scope. If we use var in a function we can use it only within the
+                        function but we can't access it outside that function. It also shows hoisting behavior. Hosting
+                        means if we use var it'll hoist the top of the content. We can change the value of a var
+
+                        let: let is a blocking scope that means we can use and access in a block that means within
+                        curly-brace or {}. There are many block scopes like function and loop. It is also used within
+                        nested blocks.
+
+                        const: const is also a blocked scope but we cannot reassign its value. It is similar to let. In
+                        most cases, we are using const when we declare an object or array because we can modify their
+                        properties.
+
+                    </div>
+                </div>
+            </div>
+            <!-- question-2 -->
+            <div class="collapse collapse-plus bg-red-100 my-3">
+                <input type="checkbox" />
+                <div class="collapse-title text-xl font-bold">
+                    Q-2: Tell us the use cases of null and undefined
+                </div>
+                <div class="collapse-content">
+                    <p>
+                    <div class="text-lg text-center font-bold pt-5 pb-3">Null and Undefined</div>
+                    null and undefined are two different values that represent a concept. When we compare null and
+                    undefined with == it shows true but when we use === it shows false. Using null and undefined
+                    properly then it helps us to less error-free code.
+
+                    <div class="py-3">
+                        <span class="text-lg font-bold">Null:</span> Null is a special type of value that indicates an
+                        empty value. The type of null shows 'object' but it's not a true object
+                        Developers use a null value as an object property to ensure a value is missing or not.
+                    </div>
+
+                    <span class="text-lg font-bold">Undefined:</span> If we declare a variable but do not assign its
+                    value it'll automatically assign a value as undefined.
+
+                    Then if a function has some parameters and we don't assign arguments when we call the function then
+                    it'll set undefined automatically. If a function hasn't returned anything then it'll return an
+                    undefined result when we call it
+
+
+                    If an object has no property that we want to access it'll return an undefined value.
+
+                    </p>
+                </div>
+            </div>
+            <!-- question-3 -->
+            <div class="collapse collapse-plus bg-red-100">
+                <input type="checkbox" />
+                <div class="collapse-title text-xl font-bold">
+                    Q-3: What do you mean by REST API?
+                </div>
+                <div class="collapse-content">
+                    <div class="text-lg text-center font-bold pt-5 pb-3">API</div>
+                    <p>API is an application programming interface. REST(Representational State Transfer) API is an API
+                        that follows the rules and regulations for web-related services. For example, in creating web
+                        applications Javascript makes HTTP requests to REST API to collect data and send it to the
+                        server
+
+
+                        1. JavaScript applications generally use HTTP methods like GET, POST, PUT, and DELETE to
+                        interact with REST API. These methods are responses to CRUD (Create, Read, Update, Delete) that
+                        are managed by the API
+
+                        Generally, JavaScipt shows asynchronous behavior with REST API so that users can use this
+                        language smoothly and can avoid blocking functions. Asynchronous are mostly used the 'fetch' API
+                        features
+
+                        When REST APIs are used for asynchronous it'll also exchange data in some formats especially
+                        JSON(JavaScipt Object Notation)
+
+
+                        JavaScipt application also handles errors and responses from REST API. Error handling involves
+                        checking status codes 200 for success, 404 for not found, and processing error messages.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <footer></footer>
+
+
+
+
+</body>
+
+</html>
