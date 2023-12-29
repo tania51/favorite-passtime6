@@ -27,7 +27,7 @@ const catrgoryItem = (result) => {
 
         const createDiv = document.createElement('div');
         createDiv.innerHTML = `
-        <a onclick="productDetails('${category.category_id}')" class="tab">${category.category}</a>
+        <a onclick="productDetails('${category.category_id}')" class="tab px-5 mx-2 bg-slate-100">${category.category}</a>
         `;
         categoryId.appendChild(createDiv);
         const id = category.category_id
